@@ -1,5 +1,5 @@
 # Write your MySQL query statement below
-SELECT Employees.name, EmployeeUNI.unique_id  -- or e.name, eu.unique_id   here e and eu is alias(temporoey name )
-FROM Employees   -- Employees e
-LEFT JOIN EmployeeUNI   -- EmployeeUNI eu
-ON Employees.id = EmployeeUNI.id;     -- e.id = eu.id ;
+select  eu.unique_id ,e.name from Employees  e
+left join EmployeeUNI eu on e.id=eu.id
+
+
